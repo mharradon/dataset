@@ -39,8 +39,8 @@ def normalize_column_name(name):
     if not isinstance(name, string_types):
         raise ValueError('%r is not a valid column name.' % name)
     name = name.lower().strip()
-    if not len(name) or '.' in name or '-' in name:
-        raise ValueError('%r is not a valid column name.' % name)
+    #if not len(name) or '.' in name or '-' in name:
+    #    raise ValueError('%r is not a valid column name.' % name)
     return name
 
 
